@@ -29,6 +29,21 @@
             font-size: 0.9em;
             color: #777;
         }
+        .close-btn {
+            display: block;
+            width: 200px;
+            margin: 40px auto;
+            padding: 12px;
+            background: #d9534f;
+            color: white;
+            text-align: center;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .close-btn:hover {
+            background: #c9302c;
+        }
     </style>
 </head>
 <body>
@@ -48,4 +63,28 @@
 
         <li><strong>5. Raffle Prizes</strong> — All raffle prizes are pre-defined before the event and cannot be exchanged or converted to cash.</li>
 
-        <li><strong>6. Organizer Rights</strong> — Organizers reserve the right to modify, postpone, or cancel the raffle if necessary
+        <li><strong>6. Organizer Rights</strong> — Organizers reserve the right to modify, postpone, or cancel the raffle if necessary due to unforeseen circumstances.</li>
+
+        <li><strong>7. Agreement</strong> — Submitting the registration form confirms that you have read and agreed to these Terms & Conditions.</li>
+    </ul>
+
+    <button class="close-btn" onclick="closePage()">Close Page</button>
+
+    <script>
+        function closePage() {
+            // Try closing the tab
+            window.close();
+
+            // If blocked, redirect instead
+            setTimeout(() => {
+                window.location.href = "https://google.com";
+            }, 200);
+        }
+    </script>
+
+    <footer>
+        © 2026 AIS Event Committee
+    </footer>
+
+</body>
+</html>
